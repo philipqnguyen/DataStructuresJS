@@ -73,4 +73,26 @@ describe('Binary Search Tree', function () {
 
     bst.contains(90).should.equal(false);
   });
+
+  it('should return the correct depth', function () {
+    console.log(bst);
+    bst.depth().should.equal(5);
+  });
+
+  it('should return the correct balance', function () {
+    bst.balance().should.equal(0);
+  });
+
+  it('should return the correct balance when left is higher', function () {
+    bst.insert(45);
+    bst.balance().should.equal(1);
+  });
+
+  it('should return the correct balance when right is higher', function () {
+    bst.insert(101);
+    bst.insert(79);
+    bst.insert(67);
+
+    bst.balance().should.equal(-2);
+  });
 });
