@@ -51,3 +51,7 @@ Additionally, you can console log all of the values in the binary search tree in
 2. `inOrder()`
 3. `postOrder()`
 4. `breadthFirst()`
+
+## References
+
+Tips from the book, Cracking the Coding Inteview by Gayle Laakmann McDowell, helped me to complete the breadthFirst() approach in the Binary Search Tree.
