@@ -75,7 +75,7 @@ describe('Binary Search Tree', function () {
   });
 
   it('should return the correct depth', function () {
-    console.log(bst);
+
     bst.depth().should.equal(5);
   });
 
@@ -94,5 +94,24 @@ describe('Binary Search Tree', function () {
     bst.insert(67);
 
     bst.balance().should.equal(-2);
+  });
+});
+
+describe('Traversals in Binary Search Tree', function () {
+  it('should do a pre-order traversal correctly', function () {
+
+    bst.preOrder().should.equal("50, 44, 41, 21, 1, 45, 99, 75, 66, 67, 77, 79, 101");
+  });
+
+  it('should do an in-order traversal correctly', function () {
+    bst.inOrder().should.equal('1, 21, 41, 44, 45, 50, 66, 67, 75, 77, 79, 99, 101');
+  });
+
+  it('should do a post-order traversal correctly', function () {
+    bst.postOrder().should.equal('1, 21, 41, 45, 44, 67, 66, 79, 77, 75, 101, 99, 50');
+  });
+
+  it('should do a breadth-first traversal correctly', function () {
+    bst.breadthFirst().should.equal('50, 44, 99, 41, 45, 75, 101, 21, 66, 77, 1, 67, 79');
   });
 });

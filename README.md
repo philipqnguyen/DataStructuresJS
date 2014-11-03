@@ -44,3 +44,10 @@ bst.depth() // return the depth level of the tree. In this case it will return 3
 
 bst.balance() // returns an integer, positive or negative. It will return a negative number if the right side of the root has more nodes. It will return a positive number if the left side is larger than the root. If there are equal number of nodes on both sides of the root, it will return 0.
 ```
+
+Additionally, you can console log all of the values in the binary search tree in the following order:
+
+1. `preOrder()`
+2. `inOrder()`
+3. `postOrder()`
+4. `breadthFirst()`
